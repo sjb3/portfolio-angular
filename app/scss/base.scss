@@ -1,0 +1,21 @@
+// vendor styles
+@import "vendor/normalize/_normalize.scss";
+@import "vendor/bootstrap/stylesheets/_bootstrap.scss";
+@import "vendor/font-awesome/scss/font-awesome.scss";
+@import "./ngDialog.css";
+@import "./ngDialog-theme-default.css";
+
+// app styles
+@import "_theme";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-style: monospace;
+}
+
+body {
+  background-image: url('../assets/images/reflection.jpg');
+  background-size: cover;
+  image-resolution: from-image;
+}

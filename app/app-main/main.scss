@@ -1,0 +1,15 @@
+@import "_theme";
+
+.fa-barcode {
+  position: fixed;
+  size: 100px;
+  color: #33FF99;
+
+  :hover {
+    color: red;
+  }
+  :active {
+    color: white;
+  }
+  
+}

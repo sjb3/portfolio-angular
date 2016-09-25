@@ -1,0 +1,21 @@
+@import "_theme";
+
+.fa-barcode {
+  position: fixed;
+  font-size: 100px;
+  color: #33FF99;
+  margin: auto;
+  // width: 505;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  top: 70%;
+  left: 47%;
+
+  &:hover {
+    color: red;
+  }
+  &:active {
+    color: white;
+  }
+}

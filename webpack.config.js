@@ -18,7 +18,7 @@ var plugins = [
   }),
 ];
 
-if (prouction){
+if (production){
   plugins = plugins.concat([
     new webpack.optimize.UglifyJsPlugin({
       mangle: true,
@@ -45,7 +45,7 @@ module.exports = {
 postcss: function(){
   return [autoprefixer];
 },
-module:{
+module: {
   loaders: [
     {
       test: /\.scss$/,
@@ -58,6 +58,7 @@ module:{
       query: {
         presets: ['es2015'],
     },
+  },
     {
       test: /\.html$/,
       loader: 'html',
@@ -86,6 +87,3 @@ module:{
 },
 
 }
-
-
-
