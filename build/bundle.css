@@ -4726,11 +4726,6 @@ html, body {
   width: 100%;
   height: 100%;
   font-style: monospace; }
-
-body {
-  background-image: url(img/e1852c8bc81120bc4e2fd56278016edb.jpg);
-  background-size: cover;
-  image-resolution: from-image; }
 .fa-barcode {
   position: fixed;
   font-size: 100px;

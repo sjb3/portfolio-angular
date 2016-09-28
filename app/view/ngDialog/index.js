@@ -10,20 +10,21 @@ appPortfolio.controller('NgDialogController', ['$log', '$location', 'ngDialog', 
 function NgDialogController($log, $location, ngDialog){
   $log.debug('ngDialog');
   this.openModal = function(){
-      ngDialog.open({
-        template: require('./ngDialog.html'),
-        plain: true,
-      });
-
+    ngDialog.open({
+      template: require('./ngDialog.html'),
+      plain: true,
+    });
+  };
+//
   this.leaveButton = function(){
-    $log.debug('Leave');
-    // $location.path('/');
+    // $log.debug('Leave');
+    $location.path('/');
     ngDialog.close();
   };
-
-  // this.enterButton = function(){
-  //   $log.debug('Enter');
-  //   $location.path();
-  // };
+//
+  this.enterButton = function(){
+    // $log.debug('Enter');
+    $location.path('/main');
+    ngDialog.close();
   };
 }
