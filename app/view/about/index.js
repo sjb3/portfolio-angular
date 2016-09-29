@@ -1,3 +1,3 @@
 'use strict';
 
-// require('about.scss');
+require('./about.scss');

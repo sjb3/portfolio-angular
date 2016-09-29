@@ -38,4 +38,4 @@ require('./view/home');
 require('./view/ngDialog');
 require('./view/main');
 require('./view/about');
-// require('./view/signin');
+// require('./app-main');

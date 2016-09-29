@@ -1,9 +1,9 @@
 @import "_theme";
 
-.fa-barcode {
+.fa-home {
   position: fixed;
-  size: 100px;
-  color: #33FF99;
+  font-size: 1000px;
+  color: white;
 
   :hover {
     color: red;
@@ -11,5 +11,5 @@
   :active {
     color: white;
   }
-  
+
 }
