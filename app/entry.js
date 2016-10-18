@@ -24,6 +24,9 @@ angular.module('appPortfolio', [ngRoute, ngDialog])
   .when('/about', {
     template: require('./view/about/about.html'),
   })
+  .when('/gallery', {
+    template: require('./view/gallery/gallery.html'),
+  })
   .otherwise({
     redirectTo: '/',
   });
@@ -38,5 +41,5 @@ require('./view/main');
 require('./view/about');
 require('./view/emailNgDialog');
 require('./view/phoneNgDialog');
-// require('./view/gallery');
+require('./view/gallery');
 // require('./app-main');

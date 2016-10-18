@@ -4751,7 +4751,7 @@ body {
   font-style: monospace; }
 .main-nav {
   margin-top: 20%;
-  margin-left: 33%;
+  margin-left: 25%;
   font-family: 'Caveat Brush', monospace; }
 
 .nav-ul {
@@ -4793,11 +4793,20 @@ body {
     font-style: italic; }
   .about-class h4 {
     text-indent: 1.5em; }
-.fa-home {
-  position: fixed;
-  font-size: 100px;
-  color: white; }
-  .fa-home :hover {
-    color: red; }
-  .fa-home :active {
-    color: white; }
+.email-ngDialog-class {
+  height: 100% auto;
+  width: 100% auto; }
+  .email-ngDialog-class .fa-envelope-o {
+    font-size: 25px;
+    font-style: italic;
+    color: #FF5B8B; }
+.phone-ngDialog-class {
+  height: 100% auto;
+  width: 100% auto; }
+  .phone-ngDialog-class .fa-phone {
+    font-size: 25px;
+    font-style: italic;
+    color: #FF5B8B; }
+h1 {
+  color: white;
+  font-size: 100px; }
