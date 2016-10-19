@@ -8,7 +8,7 @@ const appPortfolio = angular.module('appPortfolio');
 appPortfolio.controller('NgDialogController', ['$log', '$location', 'ngDialog', NgDialogController]);
 
 function NgDialogController($log, $location, ngDialog){
-  $log.debug('ngDialog');
+  $log.debug('NgDialogController');
   this.openModal = function(){
     ngDialog.open({
       template: require('./ngDialog.html'),

@@ -41,5 +41,5 @@ require('./view/main');
 require('./view/about');
 require('./view/emailNgDialog');
 require('./view/phoneNgDialog');
-require('./view/gallery');
+// require('./view/gallery');
 // require('./app-main');
