@@ -1,0 +1,15 @@
+@import "_theme";
+
+.fa-home {
+  position: fixed;
+  font-size: 1000px;
+  color: white;
+
+  :hover {
+    color: red;
+  }
+  :active {
+    color: white;
+  }
+
+}

@@ -1,0 +1,37 @@
+@import "_theme";
+
+.about-class {
+  font-family: times;
+  color: white;
+  height: 90% auto;
+  width: 70% auto;
+  position: relative;
+  background: rgba(27, 27, 27, 0.7);
+  // margin: 5px;
+  padding: 50px;
+
+  h1 {
+    font-family: 'Dancing Script', monospace;
+  }
+  .title {
+    text-decoration: overline;
+    color: red;
+    text-align: left;
+    font-family: 'Dancing Script', monospace;
+  }
+  .manifesto {
+    text-decoration: none;
+    text-align: center;
+    color: #30960f;
+  }
+  h2 {
+    text-align: center;
+    color: #50eddd;
+  }
+  h3 {
+    font-style: italic;
+  }
+  h4 {
+    text-indent: 1.5em;
+  }
+}
