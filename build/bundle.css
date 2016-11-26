@@ -4755,6 +4755,7 @@ body {
   font-family: 'Caveat Brush', monospace; }
 
 .nav-ul {
+  margin-left: 77px;
   padding: 10px;
   font-size: 40px;
   line-height: 50px; }
@@ -4807,6 +4808,3 @@ body {
     font-size: 25px;
     font-style: italic;
     color: #FF5B8B; }
-h1 {
-  color: white;
-  font-size: 100px; }

@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n// webpack assets\n\n__webpack_require__(1);\n__webpack_require__(2);\n\n// npm modules\nvar angular = __webpack_require__(15);\nvar ngRoute = __webpack_require__(17);\nvar ngDialog = __webpack_require__(19);\n\n// angular modules\nangular.module('appPortfolio', [ngRoute, ngDialog]).config(['$routeProvider', function ($routeProvider) {\n  $routeProvider.when('/', {\n    template: __webpack_require__(20)\n  }).when('/main', {\n    template: __webpack_require__(21),\n    controller: 'MainNavController',\n    controllerAs: 'mainNavCtrl'\n  }).when('/about', {\n    template: __webpack_require__(22)\n  })\n  // .when('/gallery', {\n  //   template: require('./view/gallery/gallery.html'),\n  // })\n  .otherwise({\n    redirectTo: '/'\n  });\n}]);\n\n// angular services\n\n// angular controllers\n__webpack_require__(23);\n__webpack_require__(26);\n__webpack_require__(30);\n__webpack_require__(33);\n__webpack_require__(36);\n__webpack_require__(40);\n__webpack_require__(44);\n// require('./app-main');\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/entry.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/entry.js?");
+	eval("'use strict';\n\n// webpack assets\n\n__webpack_require__(1);\n__webpack_require__(2);\n\n// npm modules\nvar angular = __webpack_require__(15);\nvar ngRoute = __webpack_require__(17);\nvar ngDialog = __webpack_require__(19);\n\n// angular modules\nangular.module('appPortfolio', [ngRoute, ngDialog]).config(['$routeProvider', function ($routeProvider) {\n  $routeProvider.when('/', {\n    template: __webpack_require__(20)\n  }).when('/main', {\n    template: __webpack_require__(21),\n    controller: 'MainNavController',\n    controllerAs: 'mainNavCtrl'\n  }).when('/about', {\n    template: __webpack_require__(22)\n  }).when('/gallery', {\n    template: __webpack_require__(23)\n  }).otherwise({\n    redirectTo: '/'\n  });\n}]);\n\n// angular services\n\n// angular controllers\n__webpack_require__(24);\n__webpack_require__(27);\n__webpack_require__(31);\n__webpack_require__(34);\n__webpack_require__(37);\n__webpack_require__(41);\n// require('./view/gallery');\n// require('./app-main');\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/entry.js\n ** module id = 0\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/entry.js?");
 
 /***/ },
 /* 1 */
@@ -110,121 +110,115 @@
 /* 21 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"<div class=\\\"main-nav\\\">\\n  <!-- <ul class=\\\"nav-ul animated bounceInDown\\\"> -->\\n  <ul class=\\\"nav-ul\\\">\\n    <li><i class=\\\"fa fa-home\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.homeFontAwesome()\\\"></i></li>\\n    <li class=\\\"about\\\" ng-click=\\\"mainNavCtrl.aboutFontAwesome()\\\">about</li>\\n    <a href=\\\"https://github.com/sjb3\\\"><li><i class=\\\"fa fa-github\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.gitHubFontAwesome()\\\"></i></li></a>\\n    <a href=\\\"https://www.linkedin.com/in/justin-byun-b08779116?trk=hp-identity-photo\\\"><li><i class=\\\"fa fa-linkedin-square\\\" aria-hidden=\\\"true\\\"></i></li></a>\\n    <!-- <li class=\\\"gallery\\\">Gallery</li> -->\\n    <li><i class=\\\"fa fa-envelope\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"EmailNgDialogController as emailNgDialogCtrl\\\" ng-click=\\\"emailNgDialogCtrl.openModal()\\\"></i></li>\\n    <li><i class=\\\"fa fa-phone\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"PhoneNgDialogController as phoneNgDialogCtrl\\\" ng-click=\\\"phoneNgDialogCtrl.openModal()\\\"></i></li>\\n  </ul>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/main.html\n ** module id = 21\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/main.html?");
+	eval("module.exports = \"<div class=\\\"main-nav\\\">\\n  <ul class=\\\"nav-ul\\\">\\n    <li><i class=\\\"fa fa-home\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.homeFontAwesome()\\\"></i></li>\\n    <li class=\\\"about\\\" ng-click=\\\"mainNavCtrl.aboutFontAwesome()\\\">about</li>\\n    <a href=\\\"https://github.com/sjb3\\\"><li><i class=\\\"fa fa-github\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.gitHubFontAwesome()\\\"></i></li></a>\\n    <a href=\\\"https://www.linkedin.com/in/justin-byun-b08779116?trk=hp-identity-photo\\\"><li><i class=\\\"fa fa-linkedin-square\\\" aria-hidden=\\\"true\\\"></i></li></a>\\n    <li class=\\\"gallery\\\">Gallery</li>\\n    <li><i class=\\\"fa fa-envelope\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"EmailNgDialogController as emailNgDialogCtrl\\\" ng-click=\\\"emailNgDialogCtrl.openModal()\\\"></i></li>\\n    <li><i class=\\\"fa fa-phone\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"PhoneNgDialogController as phoneNgDialogCtrl\\\" ng-click=\\\"phoneNgDialogCtrl.openModal()\\\"></i></li>\\n  </ul>\\n</div>\\n\\n<!-- <div class=\\\"main-nav\\\">\\n  <ul class=\\\"nav-ul\\\">\\n    <li><i class=\\\"fa fa-home\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.homeFontAwesome()\\\"></i></li>\\n      <li class=\\\"about\\\" ng-click=\\\"mainNavCtrl.aboutFontAwesome()\\\">about</li>\\n      <a href=\\\"https://github.com/sjb3\\\"><li><i class=\\\"fa fa-github\\\" aria-hidden=\\\"true\\\" ng-click=\\\"mainNavCtrl.gitHubFontAwesome()\\\"></i></li></a>\\n     <a href=\\\"https://www.linkedin.com/in/justin-byun-b08779116?trk=hp-identity-photo\\\"><li><i class=\\\"fa fa-linkedin-square\\\" aria-hidden=\\\"true\\\"></i></li></a>\\n     <li class=\\\"gallery\\\">Gallery</li>\\n     <li><i class=\\\"fa fa-envelope\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"EmailNgDialogController as emailNgDialogCtrl\\\" ng-click=\\\"emailNgDialogCtrl.openModal()\\\"></i></li>\\n     <li><i class=\\\"fa fa-phone\\\" aria-hidden=\\\"true\\\" ng-controller=\\\"PhoneNgDialogController as phoneNgDialogCtrl\\\" ng-click=\\\"phoneNgDialogCtrl.openModal()\\\"></i></li>\\n   </ul>\\n </div> -->\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/main.html\n ** module id = 21\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/main.html?");
 
 /***/ },
 /* 22 */
 /***/ function(module, exports) {
 
-	eval("module.exports = \"\\n<div class=\\\"about-class\\\">\\n  <!-- <app-main></app-main> -->\\n\\n  <h1>Justin Byun</h1>\\n  <h2 class=\\\"title\\\"><em>Full-Stack Javascript Developer</em></h2></br>\\n\\n  <h3 class=\\\"manifesto\\\"><em>As a former Biotech Researcher, </br>I learned the beauty of analytical skills and value of critical thinking: the artistry of science.\\n    Now, as a full-stack developer, I’d like to add the artistry of science to programming to develop user-friendly, efficient and resource saving apps. </em></h3>\\n  </br>\\n  <h2>Experiences</h2></br>\\n    <h3>Per Diem ( University of Washington | Seattle WA, 07/13 - 04/16)</h3></br>\\n    <ul>\\n      <li>Electronics Processing Assistant: hard drive/data destruction</li></br>\\n      <li>Research assistant ( Make-A-Wish funded ): beverage consumption study in high schools in Washington State,</br>\\n        surveyed students and participated in building protocol </li></br>\\n    </ul>\\n    <h3>Research Scientist ( University of Washington-Biochemistry | Seattle WA: 07/07-06/13 )</h3></br>\\n    <ul>\\n      <li>Prep DNA samples and sequence them: optimize and trouble shooting reaction</li></br>\\n      <li>Monitoring accuracy and integrity of data produced and posting to the database</li></br>\\n      <li>Control sample flows and process to maximize the resource utilization</li></br>\\n      <li>Manage and maintain the lab and equipmen</li><br>\\n    </ul>\\n\\n    <h3>Research Engineer ( University of Washington-Pharmacology, Howard Hughes Medical Institute | Seattle WA: 08/05-10/05 )</h3></br>\\n    <ul>\\n    <li> Investigate the roles of cell signaling molecules and pathways in cell growth and development</li></br>\\n    <li>Therapeutic goals and projections: understand and control tumorigenesis</li></br>\\n    </ul></br>\\n\\n  <h2>Education</h2></br>\\n  <h3>Code Fellows ( 2016, Seattle WA ): </h3></br>\\n  <h4>Certificate in Advanced Full-Stack JavaScript Dev: Sept, 2016</h4></br>\\n  <h3>University of Washington ( 2005, Seattle WA ): </h3></br>\\n  <h4>Bachelor’s of Sciences: Majors in Biochemistry and Microbiology, Minor in Chemistry</h4></br>\\n  </h3><br>\\n\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/about.html\n ** module id = 22\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/about.html?");
+	eval("module.exports = \"<div class=\\\"about-class\\\">\\n  <!-- <app-main></app-main> -->\\n\\n  <h1>Justin Byun</h1>\\n  <h2 class=\\\"title\\\"><em>Full-Stack Javascript Developer</em></h2></br>\\n\\n  <h3 class=\\\"manifesto\\\"><em>As a former Biotech Researcher, </br>I learned the beauty of analytical skills and value of critical thinking: the artistry of science.\\n    Now, as a full-stack developer, I’d like to add the artistry of science to programming to develop user-friendly, efficient and resource saving apps. </em></h3>\\n  </br>\\n  <h2>Experiences</h2></br>\\n    <h3>Per Diem ( University of Washington | Seattle WA, 07/13 - 04/16)</h3></br>\\n    <ul>\\n      <li>Electronics Processing Assistant: hard drive/data destruction</li></br>\\n      <li>Research assistant ( Make-A-Wish funded ): beverage consumption study in high schools in Washington State,</br>\\n        surveyed students and participated in building protocol </li></br>\\n    </ul>\\n    <h3>Research Scientist ( University of Washington-Biochemistry | Seattle WA: 07/07-06/13 )</h3></br>\\n    <ul>\\n      <li>Prep DNA samples and sequence them: optimize and trouble shooting reaction</li></br>\\n      <li>Monitoring accuracy and integrity of data produced and posting to the database</li></br>\\n      <li>Control sample flows and process to maximize the resource utilization</li></br>\\n      <li>Manage and maintain the lab and equipmen</li><br>\\n    </ul>\\n\\n    <h3>Research Engineer ( University of Washington-Pharmacology, Howard Hughes Medical Institute | Seattle WA: 08/05-10/05 )</h3></br>\\n    <ul>\\n    <li> Investigate the roles of cell signaling molecules and pathways in cell growth and development</li></br>\\n    <li>Therapeutic goals and projections: understand and control tumorigenesis</li></br>\\n    </ul></br>\\n\\n  <h2>Education</h2></br>\\n    <h3>Code Fellows ( 2016, Seattle WA ) </h3></br>\\n      <h4>Certificate in Advanced Full-Stack JavaScript Dev: Sept, 2016</h4></br>\\n    <h3>University of Washington ( 2005, Seattle WA ) </h3></br>\\n      <h4>Bachelor’s of Sciences: Majors in Biochemistry and Microbiology, Minor in Chemistry</h4></br>\\n    </h3><br>\\n\\n  <h2>Skill Sets</h2>\\n    <h3>proficient skills;</h3>\\n    <h4>javaScript, jQuery, nodeJS, expressJS, bluebirdJS, AngularJS, webpack, REST API, Mocha, gulpJS, HTML5, CSS3/SASS, SQL, noSQL(mongoDB)</h4>\\n  </br>\\n\\n  <h2>Completed Projects</h2>\\n    <h3>_brewBuddy_coffeeCompanion (Sept 2016)</h3>\\n      <ul>\\n      <li>Focus Group: from everyday coffee drinkers to coffee aficinado</li>\\n      <li>Objectives: clients can customize their daily morning joe's to order, along with optional reviews/personal blogs</li>\\n      <li>For Backend, API is created with nodeJS utilizing expressJS to handle user requests, and mongoDB, and later tested with mocha and gulpJS:</br>\\n        For Frontend, angularJS, HTML5, CSS3 were used along with webPack and subsequent testing with Karma and Jasmine</li>\\n    </ul>\\n\\n    <h3>_concert Finder(Feb 2016)</h3>\\n      <ul>\\n      <li>Focus Group: concert goers worldwide</li>\\n      <li>Objectives: lets clients find concerts of interests at keystrokes, location service with ticket info at songKick link</li>\\n      <li>Created with songKick and mapBox API’s with leafletJS</li>\\n    </ul>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/about.html\n ** module id = 22\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/about.html?");
 
 /***/ },
 /* 23 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	eval("'use strict';\n\n__webpack_require__(24);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/home/index.js\n ** module id = 23\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/home/index.js?");
+	eval("module.exports = \"<!-- <div class=\\\"container\\\"> -->\\n  <div class=\\\"container-slider\\\">\\n    <img ng-repeat=\\\"slide in slides\\\" class=\\\"slide\\\" ng-hide=\\\"!isCurrentSlideIndex($index)\\\" ng-src=\\\"{{slide.image}}\\\">\\n  </div>\\n<!-- </div> -->\\n    <h1>HELLO</h1>\\n<nav class=\\\"nav\\\">\\n  <div class=\\\"wrapper\\\">\\n    <ul class=\\\"dots\\\">\\n      <li class=\\\"dot\\\" ng-repeat=\\\"slide in slides\\\">\\n        <a href=\\\"#\\\" ng-class=\\\"{'active':isCurrentSlideIndex($index)}\\\" ng-click=\\\"setCurrentSlideIndex($index);\\\">{{slide.description}}</a></li>\\n      </ul></div>\\n    </nav>\\n  </div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/gallery/gallery.html\n ** module id = 23\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/gallery/gallery.html?");
 
 /***/ },
 /* 24 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/home/home.scss\n ** module id = 24\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/home/home.scss?");
-
-/***/ },
-/* 25 */,
-/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(27);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('NgDialogController', ['$log', '$location', 'ngDialog', NgDialogController]);\n\nfunction NgDialogController($log, $location, ngDialog) {\n  $log.debug('ngDialog');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(29),\n      plain: true\n    });\n  };\n  //\n  this.leaveButton = function () {\n    // $log.debug('Leave');\n    $location.path('/');\n    ngDialog.close();\n  };\n  //\n  this.enterButton = function () {\n    // $log.debug('Enter');\n    $location.path('/main');\n    ngDialog.close();\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/index.js\n ** module id = 26\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/index.js?");
+	eval("'use strict';\n\n__webpack_require__(25);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/home/index.js\n ** module id = 24\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/home/index.js?");
 
 /***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/home/home.scss\n ** module id = 25\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/home/home.scss?");
+
+/***/ },
+/* 26 */,
 /* 27 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/ngDialog-html.scss\n ** module id = 27\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/ngDialog-html.scss?");
-
-/***/ },
-/* 28 */,
-/* 29 */
-/***/ function(module, exports) {
-
-	eval("module.exports = \"<div class=\\\"dialog-class\\\">\\n  <h2> Inside </h2>\\n    <ul>\\n      <li> resume/CV </li>\\n      <li> previous projects at gitHub </li>\\n      <li> linkedIn Profile </li>\\n      <li> e-Mail </li>\\n      <li> phone # </li>\\n  </ul>\\n  <button ng-controller=\\\"NgDialogController as ngDialogCtrl\\\" ng-click=\\\"ngDialogCtrl.leaveButton()\\\" class=\\\"btn btn-default\\\">Leave</button>\\n  <button ng-controller=\\\"NgDialogController as ngDialogCtrl\\\" ng-click=\\\"ngDialogCtrl.enterButton()\\\" class=\\\"btn btn-danger\\\">Enter</button>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/ngDialog.html\n ** module id = 29\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/ngDialog.html?");
-
-/***/ },
-/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(31);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('MainNavController', ['$log', '$location', MainNavController]);\n\nfunction MainNavController($log, $location) {\n  $log.debug('MainNavController');\n\n  this.homeFontAwesome = function () {\n    $location.path('/');\n  };\n\n  this.aboutFontAwesome = function () {\n    $location.path('/about');\n  };\n\n  this.gitHubFontAwesome = function () {\n    $location('www.github.com/sjb3');\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/index.js\n ** module id = 30\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/index.js?");
+	eval("'use strict';\n\n__webpack_require__(28);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('NgDialogController', ['$log', '$location', 'ngDialog', NgDialogController]);\n\nfunction NgDialogController($log, $location, ngDialog) {\n  $log.debug('NgDialogController');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(30),\n      plain: true\n    });\n  };\n  //\n  this.leaveButton = function () {\n    // $log.debug('Leave');\n    $location.path('/');\n    ngDialog.close();\n  };\n  //\n  this.enterButton = function () {\n    // $log.debug('Enter');\n    $location.path('/main');\n    ngDialog.close();\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/index.js\n ** module id = 27\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/index.js?");
+
+/***/ },
+/* 28 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/ngDialog-html.scss\n ** module id = 28\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/ngDialog-html.scss?");
+
+/***/ },
+/* 29 */,
+/* 30 */
+/***/ function(module, exports) {
+
+	eval("module.exports = \"<div class=\\\"dialog-class\\\">\\n    <h2> Inside </h2>\\n      <ul>\\n        <li> resume/CV </li>\\n        <li> previous projects at gitHub </li>\\n        <li> linkedIn Profile </li>\\n        <li> e-Mail </li>\\n       <li> phone # </li>\\n   </ul>\\n   <button ng-controller=\\\"NgDialogController as ngDialogCtrl\\\" ng-click=\\\"ngDialogCtrl.leaveButton()\\\" class=\\\"btn btn-default\\\">Leave</button>\\n   <button ng-controller=\\\"NgDialogController as ngDialogCtrl\\\" ng-click=\\\"ngDialogCtrl.enterButton()\\\" class=\\\"btn btn-danger\\\">Enter</button>\\n </div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/ngDialog/ngDialog.html\n ** module id = 30\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/ngDialog/ngDialog.html?");
 
 /***/ },
 /* 31 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/main.scss\n ** module id = 31\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/main.scss?");
-
-/***/ },
-/* 32 */,
-/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(34);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/index.js\n ** module id = 33\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/index.js?");
+	eval("// 'use strict';\n//\n// require('./main.scss');\n//\n// const angular = require('angular');\n// const appPortfolio = angular.module('appPortfolio');\n//\n// appPortfolio.controller('MainNavController', ['$log', '$location', MainNavController]);\n//\n// function MainNavController($log, $location){\n//   $log.debug('MainNavController');\n//\n//   this.homeFontAwesome = function(){\n//     $location.path('/');\n//   };\n//\n//   this.aboutFontAwesome = function(){\n//     $location.path('/about');\n//   };\n//\n//   // this.emailFontAwesome = function(){\n//   //   $location('www.github.com/sjb3');\n//   // };\n// }\n\n'use strict';\n\n__webpack_require__(32);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('MainNavController', ['$log', '$location', MainNavController]);\n\nfunction MainNavController($log, $location) {\n  $log.debug('MainNavController');\n\n  this.homeFontAwesome = function () {\n    $location.path('/');\n  };\n\n  this.aboutFontAwesome = function () {\n    $location.path('/about');\n  };\n\n  this.gitHubFontAwesome = function () {\n    $location('www.github.com/sjb3');\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/index.js\n ** module id = 31\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/index.js?");
 
 /***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/main/main.scss\n ** module id = 32\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/main/main.scss?");
+
+/***/ },
+/* 33 */,
 /* 34 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/about.scss\n ** module id = 34\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/about.scss?");
-
-/***/ },
-/* 35 */,
-/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(37);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('EmailNgDialogController', ['$log', '$location', 'ngDialog', EmailNgDialogController]);\n\nfunction EmailNgDialogController($log, $location, ngDialog) {\n  $log.debug('EmailNgDialogController');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(39),\n      plain: true\n    });\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/index.js\n ** module id = 36\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/index.js?");
+	eval("'use strict';\n\n__webpack_require__(35);\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/index.js\n ** module id = 34\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/index.js?");
 
 /***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/about/about.scss\n ** module id = 35\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/about/about.scss?");
+
+/***/ },
+/* 36 */,
 /* 37 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/emailNgDialog.scss\n ** module id = 37\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/emailNgDialog.scss?");
-
-/***/ },
-/* 38 */,
-/* 39 */
-/***/ function(module, exports) {
-
-	eval("module.exports = \"<div class=\\\"email-ngDialog-class\\\">\\n  <h2>\\n    <i class=\\\"fa fa-envelope-o\\\" aria-hidden=\\\"true\\\">klofseattle@hotmail.com</i>\\n  </h2>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/emailNgDialog.html\n ** module id = 39\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/emailNgDialog.html?");
-
-/***/ },
-/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n__webpack_require__(41);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('PhoneNgDialogController', ['$log', '$location', 'ngDialog', PhoneNgDialogController]);\n\nfunction PhoneNgDialogController($log, $location, ngDialog) {\n  $log.debug('PhoneNgDialogController');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(43),\n      plain: true\n    });\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/index.js\n ** module id = 40\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/index.js?");
+	eval("'use strict';\n\n__webpack_require__(38);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('EmailNgDialogController', ['$log', '$location', 'ngDialog', EmailNgDialogController]);\n\nfunction EmailNgDialogController($log, $location, ngDialog) {\n  $log.debug('EmailNgDialogController');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(40),\n      plain: true\n    });\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/index.js\n ** module id = 37\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/index.js?");
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/emailNgDialog.scss\n ** module id = 38\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/emailNgDialog.scss?");
+
+/***/ },
+/* 39 */,
+/* 40 */
+/***/ function(module, exports) {
+
+	eval("module.exports = \"<div class=\\\"email-ngDialog-class\\\">\\n  <h2>\\n    <i class=\\\"fa fa-envelope-o\\\" aria-hidden=\\\"true\\\">   klofseattle@hotmail.com</i>\\n  </h2>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/emailNgDialog/emailNgDialog.html\n ** module id = 40\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/emailNgDialog/emailNgDialog.html?");
 
 /***/ },
 /* 41 */
-/***/ function(module, exports) {
-
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/phoneNgDialog.scss\n ** module id = 41\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/phoneNgDialog.scss?");
-
-/***/ },
-/* 42 */,
-/* 43 */
-/***/ function(module, exports) {
-
-	eval("module.exports = \"<div class=\\\"phone-ngDialog-class\\\">\\n  <h2>\\n    <i class=\\\"fa fa-phone\\\" aria-hidden=\\\"true\\\">  206) 327-7850</i>\\n  </h2>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/phoneNgDialog.html\n ** module id = 43\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/phoneNgDialog.html?");
-
-/***/ },
-/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("'use strict';\n\n//adapted from http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/\n//pictures are from Murakami Takashi's exhibition at Versailles\n\n__webpack_require__(45);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\n// appPortfolio.directive('slider', function($timeout){\n//   return {\n//     restrict: 'AE',\n//     replace: true,\n//     scope: {\n//       images: '=',\n//     },\n//     link: function(scope, elem, attrs){},\n//     template: './gallery.html',\n//     controller: 'SliderController',\n//     controllerAs: 'sliderCtrl',\n//   };\n// });\n\nappPortfolio.controller('SliderController', ['$log', 'ngAnimate', SliderController]);\n\nfunction SliderController($log) {\n  $log.debug('SliderController');\n\n  this.slides = [{\n    image: '../../assets/galleryFolder/GF01.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF02.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF03.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF04.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF05.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF06.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF07.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF08.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF09.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF10.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF11.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF12.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF13.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF14.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF15.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF16.jpg'\n  }, {\n    image: '../../assets/galleryFolder/GF17.jpg'\n  }];\n\n  this.currentIndex = 0;\n  this.setCurrentSlideIndex = function (index) {\n    this.currentIndex = index;\n  };\n  this.isCurrentSlideIndex = function (index) {\n    return this.currentIndex === index;\n  };\n  this.prevSlide = function () {\n    this.currentIndex = this.currentIndex < this.slides.length - 1 ? ++this.currentIndex : 0;\n  };\n  this.nextSlide = function () {\n    this.currentIndex = this.currentIndex > 0 ? --this.currentIndex : this.slides.length - 1;\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/gallery/index.js\n ** module id = 44\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/gallery/index.js?");
+	eval("'use strict';\n\n__webpack_require__(42);\n\nvar angular = __webpack_require__(15);\nvar appPortfolio = angular.module('appPortfolio');\n\nappPortfolio.controller('PhoneNgDialogController', ['$log', '$location', 'ngDialog', PhoneNgDialogController]);\n\nfunction PhoneNgDialogController($log, $location, ngDialog) {\n  $log.debug('PhoneNgDialogController');\n  this.openModal = function () {\n    ngDialog.open({\n      template: __webpack_require__(44),\n      plain: true\n    });\n  };\n}\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/index.js\n ** module id = 41\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/index.js?");
 
 /***/ },
-/* 45 */
+/* 42 */
 /***/ function(module, exports) {
 
-	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/gallery/gallery.scss\n ** module id = 45\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/gallery/gallery.scss?");
+	eval("// removed by extract-text-webpack-plugin\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/phoneNgDialog.scss\n ** module id = 42\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/phoneNgDialog.scss?");
+
+/***/ },
+/* 43 */,
+/* 44 */
+/***/ function(module, exports) {
+
+	eval("module.exports = \"<div class=\\\"phone-ngDialog-class\\\">\\n  <h2>\\n    <i class=\\\"fa fa-phone\\\" aria-hidden=\\\"true\\\">   206) 327-7850</i>\\n  </h2>\\n</div>\\n\";\n\n/*****************\n ** WEBPACK FOOTER\n ** ./app/view/phoneNgDialog/phoneNgDialog.html\n ** module id = 44\n ** module chunks = 0\n **/\n//# sourceURL=webpack:///./app/view/phoneNgDialog/phoneNgDialog.html?");
 
 /***/ }
 /******/ ]);
