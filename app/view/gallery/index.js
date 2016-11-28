@@ -1,31 +1,26 @@
 'use strict';
 
-//adapted from http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/
+//adapted from angularjstech.blogspot.com/
 //pictures are from Murakami Takashi's exhibition at Versailles
 require('./gallery.scss');
+
 
 const angular = require('angular');
 const appPortfolio = angular.module('appPortfolio');
 
-// appPortfolio.directive('slider', function($timeout){
-//   return {
-//     restrict: 'AE',
-//     replace: true,
-//     scope: {
-//       images: '=',
-//     },
-//     link: function(scope, elem, attrs){},
-//     template: './gallery.html',
-//     controller: 'SliderController',
-//     controllerAs: 'sliderCtrl',
-//   };
-// });
+//Controller for Carousel
+appPortfolio.controller('CarouselController', ['$log', '$location', CarouselController]);
 
-appPortfolio.controller('SliderController', ['$log', 'ngAnimate', SliderController]);
+function CarouselController($log, $location){
+  $log.debug('CarouselController');
 
-function SliderController($log){
-  $log.debug('SliderController');
+  this.backToMenu = function(){
+    $location.path('/main');
+  };
+  // initializing the time interval
+  this.myInterval= 3000;
 
+  //initializing slide array
   this.slides = [{
     image: '../../assets/galleryFolder/GF01.jpg',
   }, {
@@ -61,18 +56,50 @@ function SliderController($log){
   }, {
     image: '../../assets/galleryFolder/GF17.jpg',
   }];
-
-  this.currentIndex = 0;
-  this.setCurrentSlideIndex = function(index){
-    this.currentIndex = index;
-  };
-  this.isCurrentSlideIndex = function(index){
-    return this.currentIndex === index;
-  };
-  this.prevSlide = function(){
-    this.currentIndex = (this.currentIndex < this.slides.length - 1) ? ++ this.currentIndex : 0;
-  };
-  this.nextSlide = function(){
-    this.currentIndex = (this.currentIndex > 0) ? --this.currentIndex : this.slides.length - 1;
-  };
+  //
+  // var slides = this.slides;
+  $log.debug('slides', this.slides);
 }
+
+// 'use strict';
+//
+// const angular = require('angular');
+// const appPortfolio = angular.module('appPortfolio');
+//
+// appPortfolio
+// .directive('appGallery', function(){
+//   return {
+//     restrict: 'E',
+//     // replace: true,
+//     template: require('./gallery.html'),
+//     controller: 'GalleryController',
+//     controllerAs: 'galleryCtrl',
+//     bindToController: true,
+//     scope: {
+//       list: '=',
+//     },
+//   };
+// })
+// .controller('GalleryController', ['$log', GalleryController]);
+//
+// function GalleryController($log){
+//   $log.debug('GalleryController');
+//
+//   this.galleryStyle = 'image';
+//
+//   imageService.addImage({
+//     title: 'Murakami01',
+//     imgUrl: require('../../assets/galleryFolder/GF01.jpg'),
+//   }),
+//   imageService.addImage({
+//     title: 'Murakami02',
+//     imgUrl: require('../../assets/galleryFolder/GF02.jpg'),
+//   });
+//
+//   this.images = imageService.images;
+//   this.selectGalleryStyle = function(style){
+//     if(style ==='image')
+//       this.galleryStyle = style;
+//     return this.galleryStyle;
+//   };
+// }

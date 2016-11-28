@@ -1,14 +1,16 @@
-<!-- <div class="container"> -->
-  <div class="container-slider">
-    <img ng-repeat="slide in slides" class="slide" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+<div class="gallery-class">
+  <div class="slides-control">
+    <div>
+    <h1>Gallery</h1>
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img ng-src={{slide.image}} />
+        <div class="carousel-caption">
+          <h4> Slide {{$index + 1}}</h4>
+        </div>
+      </slide>
+    </carousel>
+    <h4 class="h4" ng-click="carouselCtrl.backToMenu()">menu</h4>
   </div>
-<!-- </div> -->
-    <h1>HELLO</h1>
-<nav class="nav">
-  <div class="wrapper">
-    <ul class="dots">
-      <li class="dot" ng-repeat="slide in slides">
-        <a href="#" ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
-      </ul></div>
-    </nav>
   </div>
+</div>

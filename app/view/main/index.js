@@ -46,4 +46,8 @@ function MainNavController($log, $location){
   this.gitHubFontAwesome = function(){
     $location('www.github.com/sjb3');
   };
+
+  this.goToGallery = function(){
+    $location.path('/gallery');
+  };
 }

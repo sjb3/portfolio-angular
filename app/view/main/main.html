@@ -4,7 +4,7 @@
     <li class="about" ng-click="mainNavCtrl.aboutFontAwesome()">about</li>
     <a href="https://github.com/sjb3"><li><i class="fa fa-github" aria-hidden="true" ng-click="mainNavCtrl.gitHubFontAwesome()"></i></li></a>
     <a href="https://www.linkedin.com/in/justin-byun-b08779116?trk=hp-identity-photo"><li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li></a>
-    <li class="gallery">Gallery</li>
+    <li class="gallery" ng-click="mainNavCtrl.goToGallery()">Gallery</li>
     <li><i class="fa fa-envelope" aria-hidden="true" ng-controller="EmailNgDialogController as emailNgDialogCtrl" ng-click="emailNgDialogCtrl.openModal()"></i></li>
     <li><i class="fa fa-phone" aria-hidden="true" ng-controller="PhoneNgDialogController as phoneNgDialogCtrl" ng-click="phoneNgDialogCtrl.openModal()"></i></li>
   </ul>
