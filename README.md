@@ -16,11 +16,6 @@ Main page has a menu-bar for resume, and contact information using ng-dialog
 
 ##how to use:
 
-from the terminal)
-```
-$ npm run watch
-```
-browser)
-```
-localhost:8080
-```
+from the terminal) ``` $ npm run watch ```
+
+browser) ``` localhost:8080 ```
