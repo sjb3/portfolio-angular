@@ -1,4 +1,6 @@
-###Portfolio in Angular way
+![alt text](./app/assets/images/water_drop.jpg)
+
+#Portfolio in Angular way
 
 Composed of intro and main pages
 
@@ -11,7 +13,14 @@ Main page has a menu-bar for resume, and contact information using ng-dialog
 2) maybe add hamburger menu-bar?
 
 3) update README?
+
 ##how to use:
 
-from the terminal) $ npm run watch
-browser) localhost:8080
+from the terminal)
+```
+$ npm run watch
+```
+browser)
+```
+localhost:8080
+```
