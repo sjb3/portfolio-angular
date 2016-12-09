@@ -1,3 +1,6 @@
+![alt tag]('./app/assets/images/water_drop.jpg')
+
+
 ###Portfolio in Angular way
 
 Composed of into and main pages
