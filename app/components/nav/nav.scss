@@ -16,7 +16,7 @@
   // box stuff
   // font
   // color
-  background-color: rgba(27, 27, 27, 0.5);
+  background-color: rgba(27, 27, 27, 0.8);
 
   a {
     font-size: 30px;
@@ -46,7 +46,7 @@
       // border-bottom: $app-default 1px solid;
       text-align: center;
       padding: 30px;
-      
+
       &:hover {
         border-bottom: $app-default 1px solid;
       }
