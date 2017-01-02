@@ -1,0 +1,41 @@
+@import "_theme";
+
+.app-ham {
+  position: relative;
+  height: 25px;
+  // border: blue 2px dotted;
+
+  .fa-bars {
+    position: absolute;
+    z-index: 100;
+    font-size: 30px;
+    color: $app-default;
+
+    &:hover {
+      color: $app-light;
+    }
+  }
+
+}
+
+.ham-exit.ng-leave {
+  animation: my_fade_animation 0.2s linear;
+  * {
+    animation: my_fade_animation 0.2s linear;
+  }
+}
+
+.ham-exit.ng-enter {
+  animation: my_fade_animation 0.2s linear reverse;
+  * {
+    animation: my_fade_animation 0.2s linear reverse;
+  }
+}
+
+@keyframes my_fade_animation {
+  from {
+    left: 0;
+  } to {
+    left: -100px;
+  }
+}

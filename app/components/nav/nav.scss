@@ -1,0 +1,64 @@
+@import "_theme";
+
+.app-nav {
+  // position
+  position: fixed;
+  top:10;
+  left:10;
+  // display
+  // w/h
+  width: 50%;
+  height: 100%;
+  // margins
+  // padding
+  padding: 10px;
+  padding-top: 100px;
+  // box stuff
+  // font
+  // color
+  background-color: rgba(27, 27, 27, 0.5);
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $app-default;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      color: $app-light;
+    }
+  }
+
+  ul  {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      border-bottom: $app-default 1px solid;
+      text-align: center;
+
+      &:hover {
+        border-bottom: $app-dark 1px solid;
+      }
+    }
+  }
+}
+// .appNav {
+//   color: yellow;
+//   font-size: 100px;
+// }
+
+// .fa-home {
+//   position: fixed;
+//   font-size: 50px;
+//   color: white;
+//
+//   :hover {
+//     color: red;
+//   }
+//   :active {
+//     color: white;
+//   }
+//
+// }
