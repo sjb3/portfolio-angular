@@ -12,6 +12,10 @@
     color: $app-default;
 
     &:hover {
+      color: #eef90c;
+    }
+
+    &:active {
       color: $app-light;
     }
   }
@@ -19,16 +23,16 @@
 }
 
 .ham-exit.ng-leave {
-  animation: my_fade_animation 0.2s linear;
+  animation: my_fade_animation 0.9s linear;
   * {
-    animation: my_fade_animation 0.2s linear;
+    animation: my_fade_animation 0.9s linear;
   }
 }
 
 .ham-exit.ng-enter {
-  animation: my_fade_animation 0.2s linear reverse;
+  animation: my_fade_animation 0.9s linear reverse;
   * {
-    animation: my_fade_animation 0.2s linear reverse;
+    animation: my_fade_animation 0.9s linear reverse;
   }
 }
 
