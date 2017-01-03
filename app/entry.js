@@ -7,11 +7,11 @@ require('./scss/base.scss');
 // npm modules
 const angular = require('angular');
 const ngRoute = require('angular-route');
-const ngAnimate = require('angular-animate');
 const ngDialog = require('ng-dialog');
+const ngAnimate = require('angular-animate');
 
 // angular modules
-angular.module('appPortfolio', [ ngRoute, ngDialog ])
+angular.module('appPortfolio', [ ngRoute, ngDialog, ngAnimate ])
 .config(['$routeProvider', function($routeProvider){
   $routeProvider
   .when('/', {

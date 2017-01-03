@@ -14,5 +14,6 @@ appPortfolio.controller('HamController', ['$log', HamController]);
 
 function HamController($log){
   $log.debug('HamController: ');
-  this.showNav = true;
+
+  this.showNav = false;
 }

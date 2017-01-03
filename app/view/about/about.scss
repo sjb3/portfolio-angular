@@ -3,12 +3,13 @@
 .about-class {
   font-family: times;
   color: white;
-  height: 90% auto;
-  width: 70% auto;
+  height: 100% auto;
+  width: 100% auto;
   position: relative;
-  background: rgba(27, 27, 27, 0.8);
+  background: rgba(27, 27, 27, 0.6);
   // margin: 5px;
   padding: 50px;
+  z-index: -100;
 
   h1 {
     font-family: 'Dancing Script', monospace;

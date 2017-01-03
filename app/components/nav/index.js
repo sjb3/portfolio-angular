@@ -7,7 +7,16 @@ const appPortfolio = angular.module('appPortfolio');
 
 appPortfolio.component('appNav', {
   template: require('./nav.html'),
+  controller: 'CloseNavigator',
 });
+
+appPortfolio.controller('CloseNavigator', ['$log', CloseNavigator]);
+
+function CloseNavigator($log){
+  $log.debug('CloseNavigator: ');
+
+  this.showNav = false;
+}
 
 // appPortfolio.controller('TakemehomeController', ['$log', '$location', TakemehomeController]);
 //
