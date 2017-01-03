@@ -4811,3 +4811,29 @@ body {
 h1 {
   color: white;
   font-size: 100px; }
+
+.h4 {
+  color: pink;
+  font-size: 50px; }
+  .h4:hover {
+    color: #f41685; }
+  .h4:active {
+    color: #fff; }
+
+.icon-umbrella {
+  color: white;
+  font-size: 50px; }
+
+.slides-control > div {
+  height: 200px; }
+
+img {
+  margin: auto;
+  width: 400px; }
+
+.slides-control {
+  position: absolute;
+  width: 400px;
+  left: 50%;
+  top: 20px;
+  margin-left: -200px; }

@@ -1,10 +1,14 @@
 'use strict';
 
-require('./appMain.scss');
+require('./nav.scss');
 
-// const angular = require('angular');
-// const appPortfolio = angular.module('appPortfolio');
-//
+const angular = require('angular');
+const appPortfolio = angular.module('appPortfolio');
+
+appPortfolio.component('appNav', {
+  template: require('./nav.html'),
+});
+
 // appPortfolio.controller('TakemehomeController', ['$log', '$location', TakemehomeController]);
 //
 // function TakemehomeController($log, $location){
