@@ -27,23 +27,29 @@
 }
 
 .ham-exit.ng-leave {
-  animation: my_fade_animation 2s linear;
+  animation: my_fade_animation 0.2s linear;
   * {
-    animation: my_fade_animation 2s linear;
+    animation: my_fade_animation 0.2s linear;
   }
 }
 
 .ham-exit.ng-enter {
-  animation: my_fade_animation 2s linear reverse;
+  animation: my_fade_animation 0.2s linear reverse;
   * {
-    animation: my_fade_animation 2s linear reverse;
+    animation: my_fade_animation 0.2s linear reverse;
   }
 }
 
 @keyframes my_fade_animation {
-  from {
-    left: 0;
-  } to {
-    left: -100px;
-  }
+0% {
+  left: 0;
+}
+100% {
+    left: -100;
+}
+  // from {
+  //   opacity: 0.5;
+  // } to {
+  //   opacity: 0;
+  // }
 }
