@@ -19,3 +19,9 @@ Main page has a menu-bar for resume, and contact information using ng-dialog
 from the terminal) ``` $ npm run watch ```
 
 browser) ``` localhost:8080 ```
+
+## re: angular-animate;
+
+current ver. crashes the code with unknownProvider Error
+
+Hence, lower prev ver was used to perform better(@1.4.3)
