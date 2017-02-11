@@ -25,11 +25,6 @@ angular.module('appPortfolio', [ ngRoute, ngDialog, ngAnimate ])
   .when('/about', {
     template: require('./view/about/about.html'),
   })
-  .when('/gallery', {
-    template: require('./view/gallery/gallery.html'),
-    controller: 'CarouselController',
-    controllerAs: 'carouselCtrl',
-  })
   .otherwise({
     redirectTo: '/',
   });
@@ -44,6 +39,5 @@ require('./view/main');
 require('./view/about');
 require('./view/emailNgDialog');
 require('./view/phoneNgDialog');
-require('./view/gallery');
 require('./components/nav');
 require('./components/ham');
